@@ -1,0 +1,14 @@
+.alignfull{
+	max-width: unset;
+	width: 100%;
+}
+
+.column-reverse{
+	flex-direction: unset;
+}
+
+@media screen and (min-width: 781px) {
+  .column-reverse {
+	flex-direction: row-reverse;
+  }
+}
