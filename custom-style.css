@@ -1,3 +1,7 @@
+body{
+  font-family: sans-serif;
+}
+
 .alignfull{
 	max-width: unset;
 	width: 100%;
@@ -12,3 +16,32 @@
 	flex-direction: row-reverse;
   }
 }
+
+.footer-image{
+	opacity: 0.3;
+}
+
+.video-btn-img-title{
+	color: #fff !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	background: #000;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+	background: #999;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #555;
+  }
