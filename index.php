@@ -10,7 +10,12 @@
  */
 
  // Enqueue main CSS
-  	wp_enqueue_style( 'custom-styles', plugin_dir_url( __FILE__ ) . 'custom-style.css', array(), wp_get_theme()->get( 'Version' ) );
+ function my_enqueue_styles() {
+    if ( ! is_admin() ) {
+        wp_enqueue_style( 'custom-styles', plugin_dir_url( __FILE__ ) . 'custom-style.css', array(), '1.1', 'all' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'my_enqueue_styles' );
   
   // Adds preview stuff for the backend.
   function preview_stuff()
