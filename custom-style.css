@@ -1,6 +1,16 @@
-body{
-  font-family: sans-serif;
+
+.wp-block-cover h1{
+  font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300))) !important;
+  text-transform: uppercase;
+  letter-spacing: 5px !important;
 }
+
+
+h2{
+  font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1600 - 300))) !important;
+  font-weight: 600!important;
+}
+
 
 .alignfull{
 	max-width: unset;
