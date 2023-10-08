@@ -1,57 +1,87 @@
 
-.wp-block-cover h1{
+h1{
   font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300))) !important;
-  text-transform: uppercase;
-  letter-spacing: 5px !important;
 }
 
-
-h2{
+.wp-site-blocks h2{
   font-size: calc(18px + (28 - 18) * ((100vw - 300px) / (1600 - 300))) !important;
-  font-weight: 600!important;
 }
+
+.wp-site-blocks h3{
+  font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+.wp-site-blocks h4{
+  font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+.wp-site-blocks h5{
+  font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+.wp-site-blocks h6{
+  font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
 
 
 .alignfull{
-	max-width: unset;
-	width: 100%;
+  max-width: unset;
+  width: 100%;
 }
 
 .column-reverse{
-	flex-direction: unset;
+  flex-direction: unset;
+}
+
+.plyr__controls *{
+  font-family: "Montserrat", sans-serif;
 }
 
 @media screen and (min-width: 781px) {
   .column-reverse {
-	flex-direction: row-reverse;
+  flex-direction: row-reverse;
   }
 }
 
+.acc-head{
+  background-color: #000;
+}
+
+.acc-head:hover{
+  background-color: #333;
+}
+
+
+.acc-head.active{
+  background-color: #333;
+}
+
 .footer-image{
-	opacity: 0.3;
+  opacity: 0.3;
 }
 
 .video-btn-img-title{
-	color: #fff !important;
+  color: #fff !important;
 }
 
 /* Custom Scrollbars */
 ::-webkit-scrollbar {
-	width: 8px;
+  width: 8px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-	background: #000;
+  background: #000;
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
     border-radius: 4px;
-	background: #999;
+  background: #999;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-	background: #555;
+  background: #555;
   }
