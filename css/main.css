@@ -1,0 +1,88 @@
+h1 {
+  font-size: calc(24px + 24 * (100vw - 300px) / 1300) !important;
+}
+
+.wp-site-blocks h2 {
+  font-size: calc(18px + 10 * (100vw - 300px) / 1300) !important;
+}
+
+.wp-site-blocks h3 {
+  font-size: calc(16px + 4 * (100vw - 300px) / 1300) !important;
+}
+
+.wp-site-blocks h4 {
+  font-size: calc(16px + 4 * (100vw - 300px) / 1300) !important;
+}
+
+.wp-site-blocks h5 {
+  font-size: calc(16px + 4 * (100vw - 300px) / 1300) !important;
+}
+
+.wp-site-blocks h6 {
+  font-size: calc(16px + 4 * (100vw - 300px) / 1300) !important;
+}
+
+.video-box {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap;
+}
+
+.video-box .image-vid-btn {
+  flex: 1 1 50%;
+  margin-bottom: 0 !important;
+  max-width: calc(50% - 10px);
+}
+
+.wp-block-cover.parallax-cover {
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 640px) {
+  .video-box .image-vid-btn {
+    flex: 1 1 1;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-width: calc(100% - 10px);
+  }
+}
+.alignfull {
+  max-width: unset;
+  width: 100%;
+}
+
+.column-reverse {
+  flex-direction: unset;
+}
+
+.plyr__controls * {
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (min-width: 781px) {
+  .column-reverse {
+    flex-direction: row-reverse;
+  }
+}
+.acc-head {
+  background-color: #000;
+}
+
+.acc-head:hover {
+  background-color: #333;
+}
+
+.acc-head.active {
+  background-color: #333;
+}
+
+.footer-image {
+  opacity: 0.3;
+}
+
+.video-btn-img-title {
+  color: #fff !important;
+}
+/* ACF block styles */
