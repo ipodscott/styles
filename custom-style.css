@@ -23,7 +23,32 @@ h1{
   font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300))) !important;
 }
 
+.video-box {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap;
+}
 
+.video-box .image-vid-btn{
+  flex: 1 1 50%;
+  margin-bottom: 0 !important;
+  max-width: calc(50% - 10px);
+}
+
+.wp-block-cover.parallax-cover{
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 640px) {
+ .video-box .image-vid-btn{
+   flex: 1 1 1 ;
+   margin:0 !important;
+   padding: 0 !important;
+   max-width: calc(100% - 10px);
+ }
+}
 
 .alignfull{
   max-width: unset;
@@ -65,23 +90,3 @@ h1{
   color: #fff !important;
 }
 
-/* Custom Scrollbars */
-::-webkit-scrollbar {
-  width: 8px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-  background: #000;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-  background: #999;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-  background: #555;
-  }
