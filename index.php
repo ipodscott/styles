@@ -12,7 +12,7 @@
  // Enqueue main CSS
  function my_enqueue_styles() {
     if ( ! is_admin() ) {
-        wp_enqueue_style( 'custom-styles', plugin_dir_url( __FILE__ ) . 'custom-style.css', array(), '1.1', 'all' );
+        wp_enqueue_style( 'custom-styles', plugin_dir_url( __FILE__ ) . 'css/main.css', array(), '1.1', 'all' );
     }
 }
 add_action( 'wp_enqueue_scripts', 'my_enqueue_styles' );
@@ -32,7 +32,8 @@ function my_enqueue_styles() {
   // Adds preview stuff for the backend.
   function preview_stuff()
   {
-  	wp_enqueue_style( 'admin-css', plugin_dir_url( __FILE__ ) . 'admin.css', array(), wp_get_theme()->get( 'Version' ) );
+  	wp_enqueue_style( 'admin-css', plugin_dir_url( __FILE__ ) . 'css/admin.css', array(), wp_get_theme()->get( 'Version' ) );
+    wp_enqueue_style( 'acf-blocks-css', plugin_dir_url( __FILE__ ) . 'css/acf_blocks.css', array(), wp_get_theme()->get( 'Version' ) );
   }
   add_action('admin_footer', 'preview_stuff');
  
