@@ -36,4 +36,28 @@ function my_enqueue_styles() {
     wp_enqueue_style( 'acf-blocks-css', plugin_dir_url( __FILE__ ) . 'css/acf_blocks.css', array(), wp_get_theme()->get( 'Version' ) );
   }
   add_action('admin_footer', 'preview_stuff');
+  
+  function smh_enqueue_script() {
+      ?>
+      <script>
+      function applyMaxHeightFromClassName() {
+          const elements = document.querySelectorAll('[class*="cover_"]');
+          elements.forEach(element => {
+              const classNames = element.className.split(/\s+/);
+              const coverClass = classNames.find(className => className.startsWith('cover_'));
+              if (coverClass) {
+                  const maxHeight = coverClass.split('_')[1];
+                  element.style.setProperty('max-height', maxHeight + 'vh', 'important');
+                  element.style.setProperty('min-height', maxHeight + 'vh', 'important');
+                  element.style.setProperty('height', maxHeight + 'vh', 'important');
+              }
+          });
+      }
+  
+      document.addEventListener('DOMContentLoaded', applyMaxHeightFromClassName);
+      </script>
+      <?php
+  }
+  
+  add_action('wp_footer', 'smh_enqueue_script');
  

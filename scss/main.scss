@@ -1,4 +1,14 @@
 
+.cover_75{
+  overflow-y: hidden;
+  max-height: 75vh !important;
+}
+
+.cover_60{
+  overflow-y: hidden;
+  max-height: 60vh !important;
+}
+
 h1{
     font-size: calc(24px + (48 - 24) * ((100vw - 300px) / (1600 - 300))) !important;
   }
