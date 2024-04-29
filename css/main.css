@@ -1,11 +1,12 @@
-.cover_75 {
-  overflow-y: hidden;
-  max-height: 75vh !important;
+.wp-block-cover.alignfull {
+  max-width: 100vw !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-.cover_60 {
-  overflow-y: hidden;
-  max-height: 60vh !important;
+.wp-block-group {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 h1 {
@@ -35,6 +36,8 @@ h1 {
 .alignfull {
   max-width: unset;
   width: 100%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 .column-reverse {

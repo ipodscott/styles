@@ -8,6 +8,13 @@
  * Author URI: https://scottsaunders.design
  * License: GPL2
  */
+ 
+ // Remove ponyfill.css
+ function custom_remove_ponyfill_css() {
+     wp_dequeue_style('blockbase-ponyfill');
+     wp_deregister_style('blockbase-ponyfill');
+ }
+ add_action('wp_enqueue_scripts', 'custom_remove_ponyfill_css', 100);
 
  // Enqueue main CSS
  function my_enqueue_styles() {
@@ -60,4 +67,3 @@ function my_enqueue_styles() {
   }
   
   add_action('wp_footer', 'smh_enqueue_script');
- 
